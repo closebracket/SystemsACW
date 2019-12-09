@@ -1,0 +1,22 @@
+.blue {
+background:#35b4d0;
+color: #ffe5e4;
+height: 25rem;
+
+}
+.red {
+    background: #ff3125;
+    color: #ffe5e4;
+    height: 25rem;
+}
+.dln {
+font-size: 12rem;
+margin-bottom: -25px;
+}
+.invite {
+font-size: 1.5rem;
+}
+.int {
+font-size: 5rem;
+padding: 25px;
+}

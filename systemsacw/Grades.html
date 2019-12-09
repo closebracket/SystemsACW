@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Systems Analysis Work</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['line']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Assignment Number');
+      data.addColumn('number', 'Artifical Intelligence');
+      data.addColumn('number', '2D Graphics');
+      data.addColumn('number', 'Systems Analysis');
+
+      data.addRows([
+        [1,  50, 100, 25],
+        [2,  40, 50, 35],
+        [3,  60, 94, 51],
+        [4, 19, 26, 56]
+      ]);
+
+      var options = {
+        chart: {
+          title: 'Year 2 1st Semester Grades',
+          subtitle: 'in Percent'
+        },
+        width: 600,
+        height: 500,
+        axes: {
+          x: {
+            0: {side: 'top'}
+          }
+        }
+      };
+
+      var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+      chart.draw(data, google.charts.Line.convertOptions(options));
+    }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <!-- Please change this to your directory, thank you.-->
+            <img src="..\systemsacw\Logo.jpg" width="150" height="150" alt="">
+        </a>
+    </nav>
+    <div class="container-fluid">
+        <h4>Grade Display</h4>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            Navbar
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="starter.html">Home </a>
+                <a class="nav-item nav-link active" href="Grades.html">Grades <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link " href="Submissions.html">Submission Area </a>
+                <a class="nav-item nav-link" href="Deadlines.html">Deadlines</a>
+                <a class="nav-item nav-link" href="modulecontentdownload.html">Module Data</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="media">
+        <img src="..\systemsacw\defaultuser.jpg" width="80" height="80" class="mr-3" alt="">
+        <div class="media-body">
+            <h5 class="mt-0">John Doe</h5>
+            <button type="button" class="btn btn-primary">Log Out</button>
+        </div>
+    </div>
+
+    <div id="line_top_x"></div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%">Assignement 4 AI Deadline [Completed]</div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">Assignement 5 AI Deadline</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

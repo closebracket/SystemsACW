@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Systems Analysis Work</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <!-- <img src="..\systemsacw\Logo.jpg" width="150" height="150" alt="">
+        </a> -->
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h4>Dashboard</h4>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="Grades.html">Grades</a>
+        <a class="nav-item nav-link" href="Submissions.html">Submission Area</a>
+        <a class="nav-item nav-link" href="deadlines.html">Deadlines</a>
+        <a class="nav-item nav-link" href="modulecontentdownload.html">Module Data</a>
+      </div>
+    </div>
+  </nav>
+
+  <!---  <div class="media">
+        <img src="..\systemsacw\defaultuser.jpg" width="80" height="80" class="mr-3" alt="">
+        <div class="media-body">
+            <h5 class="mt-0">John Doe</h5>
+            <button type="button" class="btn btn-primary">Log Out</button>
+        </div>
+    </div> --->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 blue">
+        <h1 class="text-center int">Group Invite</h1>
+        <p class="invite text-center">You have been invited to join <b>Electronics and Interfacing Assignment
+            Creation</b> by <b>Dr. Sparks</b></p>
+        <div class="text-center">
+          <button type="button" class="btn btn-danger pull-left">Decline</button>
+          <button type="button" class="btn btn-success pull-right">Accept</button>
+        </div>
+      </div>
+      <div class="col-md-6 red">
+        <h1 class="dln text-center">25</h1>
+        <p class="text-center">days until <b>Algorithms</b> deadline</p>
+        <div class="text-center">
+          <button type="button" class="btn btn-success pull-left">Submit</button>
+          <button type="button" class="btn btn-warning pull-right">Help</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Student Checklist</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Made Coffee
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Submitted Assingment
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Gave Module Feedback
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+              Returned Books
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-6">
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Due In Assignments
+                  </button>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <h4>AI ACW <span class="badge badge-primary">New</span></h4>
+                  <p>Due in on the 5/12/2019</p>
+                  <h4>Systems Analysis ACW</h4>
+                  <p>Due in on the 6/12/2019</p>
+                  <p>Extended to the 13/12/2019 <span class="badge badge-primary">Update</span></p>
+                  <h4>2D Graphics ACW</h4>
+                  <p>Due in on the 10/12/2019</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    University Events
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <h4>Gaming Society Event</h4>
+                  <p>24 Hour Charity Livestream is on soon! Click below for more details.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Module Announcements
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <h4>AI Lecture Cancelled</h4>
+                  <p>Due to Illness, the lecturer for this Module is unavailable. Lecture on 6/12/2019 Cancelled.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="node_modules/jquery/dist/jquery-3.4.1.slim.min.js"></script>
+    <script src="node_modules/popper/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
